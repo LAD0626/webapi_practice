@@ -25,3 +25,9 @@ public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplet
 13. 讓這兩個方法把條件抽到參數上用 Predicate 委派, 方法名稱與用法可以改成  GetEmployees(x => x.Age > 25), GetFruits(x => x.Price > 150)
 14. 將這兩個方法變成泛型方法  MyWhere(x => x.Age > 25), MyWhere(x => x.Price > 150), 這時候兩個方法就合併為一個
 15. 將方法的第一個參數從 IEnumerable<T\> 改成 IEnumerator<T\>, 並實作迭代器，將 where 拿掉，自己實作
+
+下面特性需要加入 Todos API 之中  
+
+16. 加入授權，未授權的使用者只能呼叫 GET 的方法
+17. 通過授權的使用者才可以呼叫 GET 以外的方法
+18. 如果未授權的使用者呼叫需要授權的 API 要有特定的例外被記錄在 log 中
