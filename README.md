@@ -1,4 +1,4 @@
-Clone by https://github.com/kyoangel/WebAPI
+#Clone by https://github.com/kyoangel/WebAPI
 
 # WebAPI Practice Projects
 專案基本描述
@@ -34,4 +34,3 @@ public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplet
 17. 通過授權的使用者才可以呼叫 GET 以外的方法
 18. 如果未授權的使用者呼叫需要授權的 API 要有特定的例外被記錄在 log 中
 19. 按照自己的需求撰寫測試
-# webapi_practice
